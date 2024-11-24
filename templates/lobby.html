@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Лобби
+{% endblock %}
+
+{% block body %}
+<!--<button class="btn btn-primary"  type="button">Log In</button>-->
+
+<a href="{{url_for('log_in')}}">
+    <button class="btn btn-primary"  type="button">Log In</button>
+</a>
+
+<a href="{{url_for('sign_up')}}">
+    <button class="btn btn-primary"  type="button">Sign Up</button>
+</a>
+
+
+{% endblock %}
